@@ -21,7 +21,7 @@ function Contact() {
             return
         }
         try {
-            const { data } = await axios.post("http://localhost:3000/api/contact", inputValue)
+            const { data } = await axios.post("https://techealth-1.vercel.app/api/contact", inputValue)
             toast.success(data.message);
             setInputValue({
                 email: "",
