@@ -12,9 +12,9 @@ function About() {
                 <div className="p-6">
                     <h2 className="text-[30px] font-bold mb-2">About Us</h2>
                     <p className="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-                        Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+                    Techealth Apex Private Limited specializes in IoT-powered innovations for road and vehicle safety.
+                    With advanced solutions like EmergencyEye, we integrate intelligent devices to enhance driver safety,
+                    enable real-time vehicle monitoring, and revolutionize smart fleet management.
                     </p>
                 </div>
             </div>
