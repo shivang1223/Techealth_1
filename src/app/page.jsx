@@ -15,8 +15,8 @@ export default function Home() {
       <ToastContainer />
       <div className="bg-gray-800">
         <div className="flex justify-center items-center mx-auto p-4">
-          <div className="sm:flex sm:flex-col">
-          <span className="block ">
+          <div className="flex flex-col sm:flex-row sm:mr-3 ">
+          <span className="block mr-3">
             <Link href="tel:+91 97173 65884" className="text-white flex items-center">
               <i className="fa fa-phone transform scale-x-[-1] mr-2"></i>+91 97173 65884
             </Link>
