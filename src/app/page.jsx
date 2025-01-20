@@ -1,3 +1,4 @@
+"use client"
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -5,11 +6,23 @@ import Navbar from "@/components/Navbar";
 import OurMission from "@/components/OurMission";
 import Ourvision from "@/components/Ourvision";
 import Team from "@/components/Team";
+import axios from "axios";
 import Link from "next/link";
+import { useEffect } from "react";
 
 import { ToastContainer } from 'react-toastify';
 
 export default function Home() {
+  const connectdb = async()=>{
+    try {
+      await axios.post(`https://www.techealth.in/api/connect`)
+    } catch (error) {
+      
+    }
+  }
+  useEffect(()=>{
+
+  })
   return (
     <div>
       <ToastContainer />

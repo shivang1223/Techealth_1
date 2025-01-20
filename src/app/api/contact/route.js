@@ -3,7 +3,6 @@ import connectDB from "@/lib/db";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
-    await connectDB()
     try {
         const { name, email, message } = await request.json()
         const data = await Contact.create(
