@@ -25,13 +25,13 @@ function Contact() {
             return
         }
         try {
-            const { data } = await axios.post(`https://www.techealth.in/api/contact`, inputValue)
-            toast.success(data.message);
             setInputValue({
                 email: "",
                 name: "",
                 message: ""
             })
+            const { data } = await axios.post(`https://www.techealth.in/api/contact`, inputValue)
+            toast.success(data.message);
         } catch (error) {
             console.log(error);
             
