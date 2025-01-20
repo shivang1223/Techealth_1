@@ -2,6 +2,8 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
+const baseUrl = process.env.BASE_URL
+const contactUrl = baseUrl + "/api/contact"
 
 function Contact() {
     const [inputValue, setInputValue] = useState({
@@ -16,12 +18,14 @@ function Contact() {
     }
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log(contactUrl);
+        
         if (!email || !name || !message) {
             toast.error("Please fill all the fields...")
             return
         }
         try {
-            const { data } = await axios.post("https://www.techealth.in/api/contact", inputValue)
+            const { data } = await axios.post(`https://www.techealth.in/api/contact`, inputValue)
             toast.success(data.message);
             setInputValue({
                 email: "",
