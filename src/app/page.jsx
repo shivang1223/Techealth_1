@@ -21,8 +21,8 @@ export default function Home() {
     }
   }
   useEffect(()=>{
-
-  })
+    connectdb()
+  },[])
   return (
     <div>
       <ToastContainer />
