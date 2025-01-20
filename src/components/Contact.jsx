@@ -2,8 +2,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
-const baseUrl = process.env.BASE_URL
-const contactUrl = baseUrl + "/api/contact"
+
 
 function Contact() {
     const [inputValue, setInputValue] = useState({
@@ -33,8 +32,6 @@ function Contact() {
             const { data } = await axios.post(`https://www.techealth.in/api/contact`, inputValue)
             toast.success(data.message);
         } catch (error) {
-            console.log(error);
-            
             toast.error("somthing went wrong!!")
             return error
         }
